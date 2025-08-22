@@ -1,54 +1,75 @@
-# README Template
+# Fashion Forward Forecasting
 
-Below is a template provided for use when building your README file for students.
+**StyleSense** is a rapidly growing online women's clothing retailer, known for its trendy and affordable fashion. With the recent surge of new customers, StyleSense has encountered a new challenge: a backlog of product reviews with missing data.  
 
-# Project Title
+While customers continue to leave valuable feedback in the form of review text, they don’t always indicate whether they would recommend the product. The goal of this project is to build a **machine learning pipeline** that can predict whether a customer would recommend a product based on numerical, categorical, and text features from the review data.
 
-Project description goes here.
+---
 
-## Getting Started
+## 🚀 Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+Use the provided dataset to train and evaluate your prediction model. Your pipeline should:
 
-### Dependencies
+- Handle **numerical**, **categorical**, and **text** features appropriately.  
+- Incorporate proper preprocessing steps for each feature type.  
+- Train a classifier to predict product recommendation.  
+- Evaluate model performance using appropriate metrics.  
 
-```
-Examples here
-```
+---
 
-### Installation
+## 📦 Dependencies
 
-Step by step explanation of how to get a dev environment running.
+The project requires the following libraries:
 
-List out the steps
+- [scikit-learn](https://scikit-learn.org/stable/)  
+- [pandas](https://pandas.pydata.org/)  
+- [spaCy](https://spacy.io/)  
+- [Jupyter Notebook](https://jupyter.org/)
+- [seaborn](https://seaborn.pydata.org/installing.html)
 
-```
-Give an example here
-```
+---
 
-## Testing
+## 📦 Project Workflow
 
-Explain the steps needed to run any automated tests
+Exploratory Data Analysis (EDA)
 
-### Break Down Tests
+- Distribution of numeric features (Age, Feedback Count).
 
-Explain what each test does and why
+- Missing value analysis.
 
-```
-Examples here
-```
+- Word frequency clouds for reviews.
 
-## Project Instructions
+Pipeline & Preprocessing
 
-This section should contain all the student deliverables for this project.
+- Numeric: imputation (median) + scaling.
 
-## Built With
+- Categorical: imputation (most frequent) + encoding.
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
+- Text: TF-IDF, character counts.
 
-Include all items used to build project.
+Model Training & Evaluation
+
+- Base model: RandomForestClassifier.
+
+- Evaluation: accuracy score.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository and install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+
+---
+
+## 📊 Results
+
+Accuracy: ~0.87
+
+---
 
 ## License
 
