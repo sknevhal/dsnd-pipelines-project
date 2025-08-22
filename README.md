@@ -62,21 +62,13 @@ Clone the repository and install dependencies:
 ```bash
 python -m pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-
-## ⚙️ Installation
-
-Clone the repository and install dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-python -m spacy download en_core_web_sm
 ```
 
 ---
 
 ## 📊 Results
 
-Accuracy: ~0.87
+Accuracy: ~ 0.87
 
 ---
 
