@@ -70,6 +70,8 @@ python -m spacy download en_core_web_sm
 
 Accuracy: ~ 0.87
 
+F1 Score: ~ 0.85
+
 ---
 
 ## License
