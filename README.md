@@ -68,9 +68,10 @@ python -m spacy download en_core_web_sm
 
 ## 📊 Results
 
-Accuracy: ~ 0.87
-
-F1 Score: ~ 0.85
+Accuracy    : ~ 0.8710
+Precision   : ~ 0.8661
+Recall      : ~ 0.8710
+F1-Score    : ~ 0.8525
 
 ---
 
